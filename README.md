@@ -147,7 +147,7 @@ Les TP suivants sont disponibles dans le répertoire `exercices` au **format JUP
 - Widget et mise à jour interactive d'un réseau d'interactions protéine-protéine
 - 💖 💖 **Most Beautiful Network Contest** 💖 💖
 
-## Version navigateur (JupyterLite)
+## Version navigateur (JupyterLite) A IGNORER
 
 Les TPs sont aussi publiés comme site [JupyterLite](https://jupyterlite.readthedocs.io/) : Python tourne dans le navigateur (noyau Pyodide), sans installation. Le site est construit et publié sur GitLab Pages par la CI (`.gitlab-ci.yml`) depuis la branche `wasm` ; son URL est indiquée dans *Deploy › Pages*. Toute la machinerie est dans le dossier `jupyter-lite/`.
 
