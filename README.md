@@ -16,42 +16,59 @@ cd jupyter_serie
 [uv](https://docs.astral.sh/uv/) est un gestionnaire de projets Python qui crée l'environnement virtuel et y installe les librairies déclarées dans `pyproject.toml`, aux versions figées dans `uv.lock`. Il gère aussi l'interpréteur Python : la version requise (>=3.12, <3.14) est téléchargée si elle est absente de votre machine.
 
 Installez uv (une seule fois) :
-```sh
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+
+> [!TIP]
+> **uv**
+> ```sh
+> curl -LsSf https://astral.sh/uv/install.sh | sh
+> ```
+
 Puis, à la racine du repository :
-```sh
-uv sync
-```
+
+> [!TIP]
+> **uv**
+> ```sh
+> uv sync
+> ```
+
 Cette commande crée le répertoire `.venv/` et y installe toutes les dépendances. Activez ensuite l'environnement avec `source .venv/bin/activate`, ou préfixez simplement vos commandes par `uv run` (par exemple `uv run jupyter notebook`).
 
 Si vous utilisez uv, les sections *Création*, *Activation* et *Installation des librairies* ci-dessous (installation avec `venv` et `pip`) ne vous concernent pas.
 
+## installation avec venv (moins recommandée)
+
 ### Création de l'environnment
 Dans le répertoire de votre repository git, tapez
 
-`python -m venv venv_jupyter_serie`
+> [!NOTE]
+> **venv**
+> ```sh
+> python -m venv venv_jupyter_serie
+> ```
 
-Cela créé un repertoire `venv_jupyter_serie` contenant les binaries et libraries python qui seront utilisées et modifiées pour ces TPs.
+Cela créé un repertoire `venv_jupyter_serie` contenant les libraries python qui seront utilisées pour ces TPs.
 
 ### Activation de l'environnement
 L'environnement devra toujours être activés dans les SHELL que vous utiliserez lors du TP. Pour cela, 'sourcez' le script `activate`. Une fois "activé", le nom de l'environnement est mentionné entre parenthèses dans le prompt du SHELL.
-```sh
-$> source ./venv_jupyter_serie/bin/activate
-$(venv_jupyter_serie)>
-```
+
+> [!NOTE]
+> **venv**
+> ```sh
+> $> source ./venv_jupyter_serie/bin/activate
+> $(venv_jupyter_serie)>
+> ```
 
 ### Installation des librairies 
 Un fichier, contenant toutes les librairies Python necessaires vous est fourni. il se nomme `requirements.txt`. Demandez à `pip` d'installer ces libraries depuis un SHELL avec l'environnement activé en tapant.
 
-```sh
-$(venv_jupyter_serie)> pip install -r requirements.txt
-```
+> [!NOTE]
+> **venv**
+> ```sh
+> $(venv_jupyter_serie)> pip install -r requirements.txt
+> ```
 
-### Mise en place des fichiers 
-* Telecharger le jeu de données auxilliare [ici](https://filesender.renater.fr/?s=download&token=2f31d25a-73cc-4f2c-8fee-13d17d6d4603)
-
-* Vous l'extrairez dans votre repository via la commande `tar -xjf data_vdb_jupyter_2025.tar.bz` et le renommerez `data/`
+## Mise en place des fichiers 
+* Le jeu de données auxiliaire est fourni avec le repository, dans le répertoire `data/`.
 
 * L'organisation de votre répository est donc la suivante: 
 ```
@@ -67,11 +84,22 @@ jupyter_serie/
 
 ### Commencer à travailler avec les notebook Jupyter
 
-L'environnement `venv_jupyter_serie` est desormais capable de servir les notebooks contenus dans les repertoires exercices.
+Votre environnement est desormais capable de servir les notebooks contenus dans les repertoires exercices.
 Vous pouvez dès maitenant démarrer le serveur Jupyter:
-```sh
-$(venv_jupyter_serie)> jupyter notebook
-```
+
+> [!NOTE]
+> **venv**
+> ```sh
+> $(venv_jupyter_serie)> jupyter notebook
+> ```
+
+Ou depuis uv:
+
+> [!TIP]
+> **uv**
+> ```sh
+> uv run jupyter notebook
+> ```
 
 
 ## Série de travaux pratiques
@@ -117,7 +145,7 @@ Les TP suivants sont disponibles dans le répertoire `exercices` au **format JUP
 ### TP5
 - Visualisation de réseaux avec networkx
 - Widget et mise à jour interactive d'un réseau d'interactions protéine-protéine
-- :sparkling_heart: :sparkling_heart: **Most Beautifull Network Contest** :sparkling_heart: :sparkling_heart:
+- 💖 💖 **Most Beautiful Network Contest** 💖 💖
 
 ## Version navigateur (JupyterLite)
 
