@@ -8,8 +8,8 @@ La configuration de départ idéale est une distribution linux équipée d'un in
 Commençons par forker et cloner, le présent repository et deplaçons nous à l'intérieur.
 
 ```sh
-git clone https://gitlab-pedago.univ-lyon1.fr/vdb/jupyter_serie 
-cd jupyter_serie
+git clone git@github.com:glaunay/vdb_rescue.git 
+cd vdb_rescue
 ```
 
 ### Installation avec uv (recommandée)
