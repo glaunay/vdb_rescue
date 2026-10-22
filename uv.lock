@@ -806,6 +806,7 @@ dependencies = [
     { name = "ipywidgets" },
     { name = "jupyter" },
     { name = "matplotlib" },
+    { name = "networkx" },
     { name = "obogo" },
     { name = "pandas" },
 ]
@@ -816,6 +817,7 @@ requires-dist = [
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.10.8" },
+    { name = "networkx", specifier = ">=3.6.1" },
     { name = "obogo", specifier = ">=0.4" },
     { name = "pandas", specifier = ">=2.3.3" },
 ]
